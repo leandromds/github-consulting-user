@@ -36,7 +36,7 @@ const config = {
         }
       },
       {
-        test: /\.(css|scss)$/,
+        test: /(appContent|reposContent)\.(css|scss)$/,
         exclude: /node_modules|style\.css/,
         include: /app/,
         use: criticalRenderingPath.extract({
@@ -50,8 +50,8 @@ const config = {
         })
       },
       {
-        test: /style\.(css|scss)$/,
-        exclude: /node_modules/,
+        test: /.(css|scss)$/,
+        exclude: /node_modules|(appContent|reposContent).(css|scss)$/,
         include: /app/,
         use: cssModules.extract({
           fallback: 'style-loader',
