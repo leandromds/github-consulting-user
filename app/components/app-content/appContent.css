@@ -1,0 +1,31 @@
+@charset 'utf-8';
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.containerApp {
+  color:white;
+}
+
+.header {
+  background-color: indigo;  
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.title {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.repoBox {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  max-width: 890px;
+  margin: 30px auto 0;
+}

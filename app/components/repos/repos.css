@@ -1,0 +1,40 @@
+@charset 'utf-8';
+.card {
+  box-shadow: 0px 0px 5px 0px rgba(224,224,224,1);
+  border-radius: 7px;
+}
+
+.reposBox {
+  composes: card;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.title {
+  color: indigo;
+  margin: 0;
+}
+
+.reposList {
+  margin: 20px 0 0;
+  padding-left: 15px;
+}
+
+.reposList li {
+  margin-bottom: 10px;
+} 
+
+.reposList li:last-of-type {
+  margin-bottom: 0;
+}
+
+.reposList li a {
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+}
+
+.reposList li a:hover {
+  background-color: indigo;
+  color: white; 
+}

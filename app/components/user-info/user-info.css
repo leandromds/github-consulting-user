@@ -1,0 +1,62 @@
+@charset 'utf-8';
+
+.card {
+  box-shadow: 0px 0px 5px 0px rgba(224,224,224,1);
+  border-radius: 7px;
+}
+
+.userInfo {
+  color: black;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 200px;
+  grid-column-gap: 30px;
+  max-width: 890px;
+  margin: 30px auto 0;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  border-radius: 7px;
+  height: 200px;
+  width: 200px;
+}
+
+.infoBox {
+  composes: card;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.title {
+  margin: 0 0 20px;
+}
+
+.title > .link {
+  text-decoration: none;
+  color: indigo;
+}
+
+.reposInfo {
+  margin: 0;
+  padding: 0;
+}
+
+.reposInfo > li {
+  align-items: center;
+  border-left: 2px solid indigo;
+  display: flex;
+  font-weight: bold;
+  height: 20px;
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.reposInfo > li:last-of-type {
+  margin-bottom: 0;
+}

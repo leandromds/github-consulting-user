@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+.containerRepos {
+  color:white;
+}
+
+.header {
+  background-color: indigo;  
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.title {
+  color: white;
+  display: block;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.commitsGroups {
+  max-width: 890px;
+  margin: 30px auto 0;
+}
+
+.commitsGroups ul {
+  margin: 0;
+  padding: 0;
+}
+
+.commitsGroups h2 {
+  text-align: center;
+}
